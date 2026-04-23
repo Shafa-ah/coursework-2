@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Student Profile</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Calibri, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 1.5rem; color: #222; }
+
+    .profile-header { display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem; }
+    .profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #888;
+  overflow: hidden; /* ensures image stays inside the circle */
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes the image fill the circle neatly */
+}
+
+
+    .profile-info { display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
+    .field { display: flex; align-items: center; gap: 10px; }
+    .field label { font-size: 13px; font-weight: 600; min-width: 65px; }
+    .field .line { flex: 1; border-bottom: 1px solid #aaa; min-width: 180px; height: 20px; }
+
+    .section-title { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 1.5rem; table-layout: fixed; }
+    th { background: #d9d9d9; border: 1px solid #999; padding: 7px 10px; text-align: left; font-weight: 600; }
+    td { border: 1px solid #999; padding: 7px 10px; height: 30px; }
+
+    .hobbies { margin-bottom: 2rem; }
+    .hobbies ol { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 12px; font-size: 13px; }
+    .hobbies li .line { display: inline-block; min-width: 220px; border-bottom: 1px solid #aaa; }
+
+    .social-links { display: flex; justify-content: space-around; gap: 1.5rem; padding-top: 0.5rem; }
+    .social-btn { text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .social-circle { width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: opacity 0.2s; }
+    .social-circle:hover { opacity: 0.85; }
+    .social-btn span { font-size: 12px; color: #555; font-weight: 600; }
+
+    .whatsapp { background: #18f264; }
+    .twitter   { background: #000; }
+  </style>
+</head>
+<body>
+
+  <div class="profile-header">
+    <div class="profile-image">
+        <img src="my profile image.png" alt="Profile Image">
+    </div>
+
+    <div class="profile-info">
+      <div class="field"><label>NAME</label>NYAKAMATURA SHAFA-AH</div>
+      <div class="field"><label>COURSE</label>INFORMATION TECHNOLOGY AND COMPUTING</div>
+      <div class="field"><label>YEAR</label>2024</div>
+    </div>
+  </div>
+
+  <p class="section-title">EDUCATION BACKGROUND</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">YEAR</th>
+        <th style="width: 45%;">SCHOOL</th>
+        <th style="width: 30%;">AWARD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2024 - PRESENT</td><td>KYAMBOGO UNIVERSITY</td><td>BACHELORS DEGREE</td></tr>
+      <tr><td>2022 - 2023</td><td>NABISUNSA GIRLS' SCHOOL</td><td>UACE</td></tr>
+      <tr><td>2017 - 2020</td><td>NABISUNSA GIRLS' SCHOOL</td><td>UCE</td></tr>
+    </tbody>
+  </table>
+
+  <div class="hobbies">
+    <p class="section-title">Hobbies</p>
+    <ol>
+      <li>Reading Webnovels</li>
+      <li>Watching Anime</li>
+      <li>Cooking</li>
+    </ol>
+  </div>
+
+  <div class="social-links">
+
+    <!-- X / Twitter -->
+    <a href="https://x.com/Nyakamatura Shafa-ah/about" target="_blank" class="social-btn">
+      <div class="social-circle twitter">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="white">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </div>
+      <span>X (Twitter)</span>
+    </a>
+
+    <!--whatsapp-->
+    <a href="https://wa.me/256709114970" target="_blank" class="social-btn">
+        <div class=" whatsapp">
+        <img src="whatsapp Image.png" alt="whatsapp" style="border-radius:65%; width: 70px; height: 90px;">
+         
+      </div>
+      <span>whatsapp</span>
+    </a>
+  </div>
+<a href=" trial questions.html">Go back to Page 1</a>
+</body>
+</html>
